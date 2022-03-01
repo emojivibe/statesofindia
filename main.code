@@ -1,0 +1,211 @@
+import 'package:flutter/material.dart';
+ 
+void main() => runApp(MyApp());
+ 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'ListViews',
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
+      home: Scaffold(
+        appBar: AppBar(title: Text('STATES OF INDIA')),
+        body: BodyLayout(),
+      ),
+    );
+  }
+}
+ 
+class BodyLayout extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return _myListView(context);
+  }
+}
+ 
+// replace this function with the code in the examples
+Widget _myListView(BuildContext context) {
+  return ListView(
+    // ignore: prefer_const_literals_to_create_immutables
+    children: <Widget>[
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Andhra Pradesh.png'),
+        ),
+        title: Text('Andhra Pradesh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Arunachal Pradesh.png'),
+        ),
+        title: Text('Arunachal Pradesh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Assam.png'),
+        ),
+        title: Text('Assam'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Bihar.png'),
+        ),
+        title: Text('Bihar'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Chhattisgarh.png'),
+        ),
+        title: Text('Chhattisgarh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/goa.png'),
+        ),
+        title: Text('Goa'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Gujarat.png'),
+        ),
+        title: Text('Gujarat'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Haryana.png'),
+        ),
+        title: Text('Haryana'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Himachal Pradesh.png'),
+        ),
+        title: Text('Himachal Pradesh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/jharkhand.jpeg'),
+        ),
+        title: Text('Jammu and Kashmir'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('assets/moon.jpg'),
+        ),
+        title: Text('Jharkhand'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Karnataka.png'),
+        ),
+        title: Text('Karnataka'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Kerala.png'),
+        ),
+        title: Text('Kerela'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/mp.png'),
+        ),
+        title: Text('Madhya Pradesh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Maharashtra.png'),
+        ),
+        title: Text('Maharashtra'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Manipur.png'),
+        ),
+        title: Text('Manipur'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Meghalaya.png'),
+        ),
+        title: Text('Meghalaya'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Mizoram.png'),
+        ),
+        title: Text('Mizoram'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Nagaland.png'),
+        ),
+        title: Text('Nagaland'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Orissa.png'),
+        ),
+        title: Text('Odisha'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Punjab.png'),
+        ),
+        title: Text('Punjab'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Rajasthan.png'),
+        ),
+        title: Text('Rajasthan'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Sikkim.png'),
+        ),
+        title: Text('Sikkim'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/TamilNadu.png'),
+        ),
+        title: Text('Tamil Nadu'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Telangana.png'),
+        ),
+        title: Text('Telangana'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Tripura.png'),
+        ),
+        title: Text('Tripura'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Uttar Pradesh.png'),
+        ),
+        title: Text('Uttar Pradesh'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/Uttarakhand.png'),
+        ),
+        title: Text('Uttarakhand'),
+      ),
+      const ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/West Bengal.png'),
+        ),
+        title: Text('West Bengal'),
+      ),
+    ],
+  );
+}
+
